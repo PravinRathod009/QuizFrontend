@@ -7,7 +7,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       '/api': {
-        target: 'https://quizzy-backend-seven.vercel.app',
+        target: 'https://quizzy-backend-seven.vercel.app/',
         changeOrigin: true
       }
     }
