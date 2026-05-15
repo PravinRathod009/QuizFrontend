@@ -2,7 +2,9 @@ import axios from 'axios';
 import { clearSession } from '../context/AuthContext';
 
 // const api ="https://quizzy-backend-seven.vercel.app/api";
-const api = axios.create({ baseURL: '/api' });
+const api = axios.create({
+  baseURL: 'https://quizzy-backend-seven.vercel.app/api'
+});
 
 api.interceptors.request.use(config => {
   const token = localStorage.getItem('qz_token');
